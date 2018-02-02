@@ -1,3 +1,4 @@
+import localforage from 'localforage'
 import * as types from './mutation-types'
 
 export default {
@@ -7,5 +8,14 @@ export default {
 
   [types.SET_USER_DATA] (state, user) {
     state.user.data = user
+  },
+
+  [types.SET_TOKEN] (state, token) {
+    if (!token) {
+      localforage.removeItem('authtoken')
+      return
+    }
+
+    localforage.setItem('authtoken', token)
   }
 }
