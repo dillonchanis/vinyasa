@@ -1,7 +1,7 @@
 {
-  "name": "nomi-fe",
+  "name": "vinyasa",
   "version": "1.0.0",
-  "description": "A meal planning app",
+  "description": "A fitness teaching platform",
   "author": "Dillon Chanis <dillonchanis92@gmail.com>",
   "private": true,
   "scripts": {
